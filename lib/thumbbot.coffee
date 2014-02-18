@@ -49,8 +49,8 @@ class Thumbbot
 			when 'png', 'jpeg', 'jpg', 'gif'
 				@handleImage @srcPath, @destPath, callback
 			
-			when 'mp4', 'avi', '3gp'
-				return exec "ffmpeg -ss #{ @options.position } -vframes 1 -i #{ @srcPath } -y -f image2 #{ @destPath }", =>
+			when 'mp4', 'avi', '3gp', 'mov'
+				return exec "ffmpeg -ss #{ @options.position } -i #{ @srcPath } -vframes 1 -y -f image2 #{ @destPath }", =>
 					@handleImage @destPath, @destPath, callback
 			
 			when 'mp3', 'aac', 'wav'
