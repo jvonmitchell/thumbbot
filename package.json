@@ -14,7 +14,7 @@
 	},
 	"dependencies": {
 		"google-images": "*",
-		"magician": "*"
+		"magician": "https://github.com/pak0811/magician/tarball/master"
 	},
 	"license": "MIT",
 	"engine": {
