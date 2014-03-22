@@ -2,6 +2,8 @@
 
 Create thumbnails from images, videos, audio(google images search) and web pages.
 
+BTW, this readme is wrong now.  We are using graphicsmagic.  Autoscaling is now supported.  The default values for width and height are null, and null.  When either or both are unspecified the library makes use of the flexibility appropriately.
+
 # Installation
 
 `npm install thumbbot`
